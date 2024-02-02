@@ -1,0 +1,19 @@
+{
+    "name": "pagestudio/framework",
+    "description": "A PHP framework for use when designing a multi-tenant application",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": "^7.2 || ^8.0",
+        "bramus/router": "~1.6",
+        "codeigniter4/framework": "4.2.0",
+        "symfony/http-foundation": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Ps\\Framework\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": false
+}
