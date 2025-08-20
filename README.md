@@ -1,25 +1,68 @@
-# Pagestudio Framework
+# PageStudio Framework
 
-The PageStudio Framework offers a system (or framework) for concurrent development of two or more applications within the same repository. In this context, each independent application is denoted as a "child" application. Each child application has a front controller denoted as a "child" front controller. The primary front controller, denoted as the "main" front controller, acts as the central entry point to these child applications. It provides an interface to the framework's kernel, enabling the definition of routes. These routes play a crucial role in facilitating communication between the main front controller and the various child applications.
+A modern PHP framework designed for managing multi-tenant applications and facilitating application transitions.
 
-## When to use this framework?
+## Overview
 
-Implement this framework when dealing with smaller applications that are too substantial and diverse to be categorized as modules of the same application, yet not substantial enough to be treated as standalone applications. This framework also proves beneficial during the migration process from one application to another. For instance, when transitioning from CodeIgniter v2 or v3 applications to CodeIgniter v4, or when moving to an entirely different framework.
+PageStudio Framework is a specialized PHP framework that enables concurrent development and management of multiple applications within a single repository. It provides an elegant solution for scenarios where applications are too complex to be mere modules but too interconnected to be completely separate.
 
-## Folder definitions
+## Key Features
 
-Comming soon...
+- **Multi-Tenant Architecture**: Manage multiple applications within a single codebase
+- **Flexible Routing**: Central routing system to handle requests across multiple applications
+- **Modern PHP Support**: Compatible with PHP 7.2+ and PHP 8.0
+- **Framework Integration**: Built-in support for CodeIgniter 4 and Symfony components
+- **Robust Database Layer**: Advanced database abstraction with adapter/driver pattern
+- **Clean Architecture**: Kernel-based design inspired by modern PHP practices
 
-## Installation
+## When to Use PageStudio Framework
 
-Comming soon...
+This framework is ideal when you need to:
 
-## License for PageStudio
+- Manage multiple interconnected applications that share common resources
+- Migrate applications between frameworks (e.g., CodeIgniter v3 to v4)
+- Build multi-tenant applications with shared infrastructure
+- Maintain separate applications that are too interrelated to be completely isolated
+
+## Quick Start
+
+### Installation
+
+```bash
+composer require pagestudio/framework
+```
+
+### Basic Setup
+
+1. Set up your main front controller
+2. Configure your child applications
+3. Define your routing structure
+
+For detailed setup instructions, see our [Getting Started Guide](docs/getting-started.md).
+
+## Documentation
+
+- [Concepts](docs/concepts/README.md)
+- [The Kernel](docs/the-kernel.md)
+- [Application Structure](docs/concepts/application-structure.md)
+- [Database Layer](docs/concepts/database.md)
+- [Configuration](docs/concepts/configuration.md)
+
+## Requirements
+
+- PHP 7.2 or higher
+- Composer
+- PDO PHP Extension (for database functionality)
+
+## License
+
+Licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 Copyright (c) 2024 CosmoInteractive, LLC
 
-This software is provided as is. Feel free to modify it to suit your needs.
-
 ## Acknowledgements
 
-Thank you to the [CodeIgniter](http://codeigniter.com) and [Symfony](https://symfony.com) teams for their work on such amazing frameworks.
+This framework builds upon the excellent work of:
+- [CodeIgniter](http://codeigniter.com)
+- [Symfony](https://symfony.com)
+- [Bramus Router](https://github.com/bramus/router)
